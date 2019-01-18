@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledSection = styled.section`
-  padding: 5%;
-  height: 100vh;
+  margin: 0;
+  min-height: 100vh;
   background: palevioletred;
   &:nth-of-type(2n) {
     background: white;
@@ -11,18 +11,13 @@ const StyledSection = styled.section`
 `
 const Title = styled.h1`
   text-align: center;
-`
-const Anchor = styled.div`
-  padding-top: 70px;
-  margin-top: -50px;
+  padding: 60px;
 `
 
 const MySection = props => (
-  <StyledSection>
-    <Anchor id={props.id}>
-      <Title>{props.title}</Title>
-      {props.children}
-    </Anchor>
+  <StyledSection id={props.id}>
+    <Title>{props.title}</Title>
+    {props.children}
   </StyledSection>
 )
 
