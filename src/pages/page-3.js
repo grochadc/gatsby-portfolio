@@ -2,6 +2,7 @@ import React from 'react'
 import MySection from '../components/MySection'
 import Table from '../components/Table'
 import Nav from '../components/Nav'
+import Grid from '../components/Grid'
 
 const links = [
   { href: '#my-interests', name: 'My Interests' },
@@ -23,7 +24,7 @@ const ThirdPage = () => (
       </Table.Container>
     </MySection>
     <MySection title="My Portfolio" id="my-portfolio">
-      Second section
+      <Grid />
     </MySection>
     <MySection>Yet another section</MySection>
   </div>
